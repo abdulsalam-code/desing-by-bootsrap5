@@ -1,0 +1,238 @@
+:root {
+    --dark-color: #192831;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+.main-btn{ 
+background-color: var(--red-color);
+color: rgb(0, 255, 200);
+padding: 0.5rem 1rem;
+text-decoration: none
+}
+.main-btn:hover{
+    color: rgb(234, 0, 255);
+}
+
+/* start nav */
+.navbar .container {
+    margin-top: 10px;
+    margin-left: 150px;
+
+}
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+color: rgb(243, 243, 227);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+color: var(--green-color);
+}
+.search {
+   color: var(--green-color);  
+}
+ .search svg {
+    color: var(--green-color);
+}
+.navbar,.navbar-toggler {
+    color: white;
+    font-size: 20px;
+    border-color: white;
+}
+.navbar,.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar,.navbar-toggler:hover{
+    color: azure;
+}
+.navbar,.navbar-toggler:focus[aria-expanded="true"] {
+ border-color: var(--green-color);
+}
+/* end nav */
+/* start landing */
+.landing{
+background-color: var(--dark-color);
+min-height: calc(100vh - 70px);
+}
+/* end landing */
+/* start features */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translate(-50%);
+}
+.features .icon-holder .number {
+    font-size: 5rem;
+    margin-bottom: 83px;
+    color: rgb(223, 207, 186);
+}
+.features .icon-holder .icon-pen {
+font-size: 4rem;
+color: var(--green-color);
+}
+.features .feat {
+    margin-top: 20px;
+    transition: 0.9s;
+}
+.features .feat:hover{
+transform: scale(1.1);
+}
+.features .feat h3 {
+    color: gold;
+}
+.main-title::after {
+content: "";
+width: 120px;
+height: 2px;
+background-color: var(--green-color);
+position: absolute;
+bottom: -20px;
+left: 50%;
+transform: translate(-50%);
+}
+
+.img {
+    width: 10rem;
+    border: 1px solid rgb(194, 199, 194);
+    border-radius: 50px;
+}
+/* end features */
+/* start our my jobs */
+.our-job ul li{
+    padding: 10px;
+    font-size: 18px;
+}
+.our-job ul .active {
+    background-color: var(--red-color);
+    color: var(--dark-color);
+}
+.our-job ul li:not(.active):hover{
+color: burlywood;
+}
+.our-job .box{
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+}
+.our-job .box::before{
+    content: attr(date-work);
+    position: absolute;
+   width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #52a199ab;
+    transition: 0.5s;
+    transform: translateX(calc(-100%  - 10px));
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(9, 12, 12);
+}
+.our-job .box:hover::before{
+    transform: translateX(0);   
+}
+/* end our my jobs */
+/* start about us */
+.team{
+    background-color: var(--section-color);
+}
+.img-team{
+    transition: 0.8s;
+}
+.img-team:hover{
+transform: scale(1.1);
+}
+.text-team h4{
+    color: rgb(0, 247, 255);
+    font-weight: 800;
+}
+.box-team h2{
+    background-color: var(--green-color);
+    
+}
+/* end about us */
+.project{
+    height: 40vh;
+    background-color: var(--dark-color);
+}
+.text-blog{
+    background-color: var(--section-color);
+    border: 1px solid white;
+}
+/* start subscribe */
+.subscribe{
+    height: 8rem;
+    background-color: rgb(32, 218, 203);
+}
+.subscribe input[type="text"]{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.text-h{
+    margin-top: 50px;
+}
+.subscribe input[type="submit"]{
+    margin-top: 50px;
+    padding: 5px 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: goldenrod;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+
+}
+/* end subscribe */
+
+/* start footer */
+.footer {
+    background-color: var(--dark-color);
+    height: 80vh;
+    color: white;
+}
+.footer .copyright > span {
+    color: darkgreen;
+}
+.footer .copyright div span {
+    color: var(--green-color);
+}
+.footer .Sosial-footer ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+ background-color: #1877f2;
+ font-size: 20px;
+}
+.footer .google {
+    background-color: #fbbc05;
+}
+.footer .linkedin {
+background-color: #0a66c2;
+}
+.footer .youtube {
+background-color: #ff0000;
+}
+/* end footer */
